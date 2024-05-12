@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leonardo da Vinci</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .container {
+            display: grid;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            grid-row-start: 1;
+            grid-row-end: 1;
+        }
+
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            grid-row-start: 1;
+            grid-row-end: 1;
+            justify-content: center;
+            gap: 20px;
+        }
+
+
+        .imagem_senna {
+            grid-column-start: 1;
+            grid-column-end: 3;
+
+        }
+
+        .principal {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+
+        }
+
+        header {
+            background-color: #f16464;
+            
+        }
+
+        ul {
+            list-style-type: none;
+
+            color: #506E6A;
+        }
+
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid #506E6A 1px;
+        }
+
+        li {
+            float: left;
+        }
+
+        a:hover {
+            background-color: #506E6A;
+            color: white;
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            grid-row-start: 1;
+            grid-row-end: 6;
+            background-color: #506E6A;
+            color: white;
+            text-align: center;
+        }
+
+        
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+               grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+
+            .imagem_senna {
+                grid-column-start: 1;
+ grid-column-end: 1;
+                
+            }
+
+            .principal {
+                grid-column-start: 1;
+ grid-column-end: 1;
+                
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <h1 style="color: white; text-align: center;">Biografia Ayrton Senna</h1>
+        <br>
+
+    </header>
+    <nav class="container menu">
+        <ul>
+            <li><a href="index.html">Biografia</a></li>
+            <li><a href="titulos.html">Titulos</a></li>
+            <li><a href="curiosidades.html">Curiosidades</a></li>
+        </ul>
+    </nav>
+    <div class="container wrapper">
+        <aside class="imagem_senna">
+            <img src="capa principal.jpeg">
+            <div class="infos">
+                <p><strong>Ocupação</strong> Piloto de Formula 1</p>
+                <p>
+                    <strong>Data do Nascimento</strong>
+                    21/03/1960
+                </p>
+                <p><strong>Data da Morte</strong> 01/05/1994 (aos 34 anos)</p>
+            </div>
+
+        </aside>
+        <section class="principal">
+            <h1>
+                Curiosidade Ayrton Senna
+            </h1>
+            <p>Em 92, durante um teste em Hockenheim, o já tricampeão Senna ficou irritado com uma manobra do então iniciante Michael Schumacher e chegou a pegar o alemão pelo colarinho. Novamente, a turma do “deixa disso” evitou algo pior. A última confusão deste tipo aconteceu após o GP do Japão de 93. Mesmo vencendo a corrida, Senna não gostou da maneira agressiva como o estreante Eddie Irvine pilotou quando ele estava colocando uma volta no norte-irlandês. Resultado: mais discussão nos boxes e, desta vez, foi o piloto da McLaren que acertou o “adversário”.</p>
+            
+        </section>
+    </div>
+    <footer class="container">
+        <h1>todos direitos reservados</h1>
+    </footer>
+    </div>
+</body>
+
+</html>
